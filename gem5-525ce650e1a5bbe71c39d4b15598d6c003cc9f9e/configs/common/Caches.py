@@ -80,7 +80,7 @@ class L3Cache(Cache):
     mshrs = 20
     tgts_per_mshr = 12
     write_buffers = 16
-    replacement_policy = Param.BaseReplacementPolicy(RRIPRP(),"Replacement policy")
+    replacement_policy = Param.BaseReplacementPolicy(LFURP(),"Replacement policy")
     #def __init__(self, **kwargs):
         #Cache.__init__(self, **kwargs)
         #self.replacement_policy.btp = 0
